@@ -31,7 +31,7 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.contenedor}>
           <div className={styles.navBar}>
-            <div className={styles.logo}><img src="/img/logo-salo.svg"></img><span>Salomon Sanchez</span></div>
+            <div className={styles.logo}><Image src="/img/logo-salo.svg" /><span>Salomon Sanchez</span></div>
             <div className={styles.menu}>
               <ul className={styles.menu_ul}>
                 <li className={styles.nav_links}>
@@ -51,10 +51,10 @@ export default function Home() {
             <div className={styles.social_links}>
               <div className={styles.redes}>
                 <a className={styles.redes_a} href="#">
-                  <img src="/img/twitter-icon.svg"></img>
+                <Image src="/img/twitter-icon.svg" />
                 </a>
                 <a className={styles.redes_a} href="#">
-                  <img src="/img/dribbble-icon.svg"></img>
+                <Image src="/img/dribbble-icon.svg" />
                 </a>
               </div>
               <div className={styles.suscribe}>
@@ -82,13 +82,13 @@ export default function Home() {
 
         <div className={styles.recent}>
           <div>
-            <img src="/img/project-3.png" className={styles.zoom1}></img>
+            <Image src="/img/project-3.png" className={styles.zoom1} />
           </div>
           <div className={styles.shadow_box}>
-            <img src="/img/project-1.png" className={styles.zoom3}></img>
+            <Image src="/img/project-1.png" className={styles.zoom3} />
           </div>
           <div>
-            <img src="/img/project-2.png" className={styles.zoom2}></img>
+            <Image src="/img/project-2.png" className={styles.zoom2} />
           </div>
         </div>
        
