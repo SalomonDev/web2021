@@ -1,0 +1,272 @@
+@font-face {
+  font-family: 'gilroyblack';
+  src: url('/fonts/gilroy-black-webfont.woff2') format('woff2'),
+       url('/fonts/gilroy-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gilroybold';
+  src: url('/fonts/gilroy-bold-webfont.woff2') format('woff2'),
+       url('/fonts/gilroy-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'gilroyregular';
+  src: url('/fonts/gilroy-regular-webfont.woff2') format('woff2'),
+       url('/fonts/gilroy-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+.header {
+  padding: 30px 0;
+  width:100%;
+  position: relative;
+  z-index: 90;
+}
+
+.main {
+  position: relative;
+  z-index: 90;
+}
+
+.contenedor {
+  max-width:1280px;
+  margin: 0 auto;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  color: #fff;
+  font-family: gilroyblack;
+  text-transform: uppercase;
+  font-size:20px;
+  margin-left: 15px;
+}
+
+.menu .menu_ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin:0;
+  padding: 0 !important;
+}
+
+.menu .nav_links {
+  list-style: none;
+}
+
+.menu .nav_links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.menu .nav_links a:hover {
+  color: var(--salo-purple)
+}
+
+.social_links {
+  display: flex;
+  align-items: center;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+}
+
+.redes_a {
+ margin-left: 15px;
+ transition: .2s all;
+}
+
+.redes_a img:hover {
+  transform: scale(1.1);
+}
+
+.suscribe a {
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: solid 1px #fff;
+  color: #fff;
+  transition: .2s all;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.suscribe a:hover {
+  background: var(--salo-purple);
+  border-color: var(--salo-purple);
+}
+
+.suscribe {
+  display: flex;
+  align-items: center;
+  line-height: 16px;
+
+  transition: .2s all;
+}
+
+.suscribe svg {
+  height: 10px;
+  line-height:12px;
+  margin-left: 10px;
+  position: relative;
+
+  transition: .2s all;
+}
+.suscribe a:hover svg {
+  left: 5px;
+}
+
+.boton_purple {
+  background: var(--salo-purple);
+  border-color: var(--salo-purple);
+  padding: 10px 20px;
+  border-radius: 7px;
+  color: #fff;
+  transition: .2s all;
+  cursor: pointer;
+  text-align: center;
+}
+
+.boton_purple svg {
+  height: 10px;
+  line-height:12px;
+  margin-left: 10px;
+  position: relative;
+  transition: .2s all;
+}
+
+.boton_full {
+  text-align: center;
+}
+
+.boton_purple:hover svg {
+  left: 5px;
+}
+
+.title_home {
+  font-size: 80px;
+  font-family: gilroybold;
+  color: #fff;
+  text-align: center;
+  line-height:78px;
+  margin: 15px 0;
+}
+
+.circle_right {
+  position: absolute;
+width: 942px;
+height: 942px;
+right: -349px;
+top: -349px;
+z-index: 1;
+background: radial-gradient(50% 50% at 50% 50%, rgba(0, 163, 255, 0.17) 0%, rgba(0, 163, 255, 0) 100%);
+}
+
+.circle_left {
+  position: absolute;
+width: 1526px;
+height: 1526px;
+left: -683px;
+top: -704px;
+z-index: 1;
+background: radial-gradient(50% 50% at 50% 50%, rgba(128, 0, 255, 0.16) 0%, rgba(0, 163, 255, 0) 100%);
+}
+
+.description {
+  color: #989898;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.recent {
+  padding:200px 10%;
+  display:flex;
+}
+
+.recent img {
+  width:100%;
+}
+
+
+
+
+.zoom1 {
+  transform: scale(1.4);
+  position: relative;
+  z-index: 9;
+  border-radius: 15px;
+  transition: .2s all;
+}
+
+.zoom1:hover {
+  z-index: 11;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.zoom2 {
+  transform: scale(1.4);
+  position: relative;
+  z-index: 9;
+  border-radius: 15px;
+  transition: .2s all;
+}
+
+.zoom2:hover {
+  z-index: 11;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.zoom3 {
+  transform: scale(2);
+  position: relative;
+  z-index: 10;
+  border-radius: 15px;
+  transition: .2s all;
+  filter: drop-shadow(-22.4192px 39.9647px 70px rgba(162, 89, 255, 0.14)) drop-shadow(28.2677px -37.0404px 70px rgba(234, 76, 137, 0.21));
+  
+}
+
+.zoom3:hover {
+  z-index: 11;
+  cursor: pointer;
+  transform: scale(2.1);
+}
+
+
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
