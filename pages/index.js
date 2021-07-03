@@ -31,7 +31,7 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.contenedor}>
           <div className={styles.navBar}>
-            <div className={styles.logo}><Image src="/img/logo-salo.svg" /><span>Salomon Sanchez</span></div>
+            <div className={styles.logo}><Image src="/img/logo-salo.svg" width={30} height={46}   /><span>Salomon Sanchez</span></div>
             <div className={styles.menu}>
               <ul className={styles.menu_ul}>
                 <li className={styles.nav_links}>
@@ -51,10 +51,10 @@ export default function Home() {
             <div className={styles.social_links}>
               <div className={styles.redes}>
                 <a className={styles.redes_a} href="#">
-                <Image src="/img/twitter-icon.svg" />
+                <Image src="/img/twitter-icon.svg"  width={36} height={29}  />
                 </a>
                 <a className={styles.redes_a} href="#">
-                <Image src="/img/dribbble-icon.svg" />
+                <Image src="/img/dribbble-icon.svg"  width={35} height={35}  />
                 </a>
               </div>
               <div className={styles.suscribe}>
@@ -81,14 +81,14 @@ export default function Home() {
         </div>
 
         <div className={styles.recent}>
-          <div>
-            <Image src="/img/project-3.png" className={styles.zoom1} />
+          <div className={styles.zoom1} >
+            <Image src="/img/project-3.png" width={1280} height={720} />
           </div>
-          <div className={styles.shadow_box}>
-            <Image src="/img/project-1.png" className={styles.zoom3} />
+          <div className={styles.zoom3} >
+            <Image src="/img/project-1.png" width={1280} height={720}/>
           </div>
-          <div>
-            <Image src="/img/project-2.png" className={styles.zoom2} />
+          <div className={styles.zoom2} >
+            <Image src="/img/project-2.png" width={1280} height={720}/>
           </div>
         </div>
        

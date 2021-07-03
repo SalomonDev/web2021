@@ -103,6 +103,10 @@
  transition: .2s all;
 }
 
+.redes_a > div {
+  overflow: visible !important;
+}
+
 .redes_a img:hover {
   transform: scale(1.1);
 }
@@ -188,6 +192,10 @@ z-index: 1;
 background: radial-gradient(50% 50% at 50% 50%, rgba(0, 163, 255, 0.17) 0%, rgba(0, 163, 255, 0) 100%);
 }
 
+.recent div > div {
+  overflow: visible !important;
+}
+
 .circle_left {
   position: absolute;
 width: 1526px;
@@ -217,7 +225,7 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(128, 0, 255, 0.16) 0%, rgba
 
 
 
-.zoom1 {
+.zoom1 img {
   transform: scale(1.4);
   position: relative;
   z-index: 9;
@@ -225,13 +233,13 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(128, 0, 255, 0.16) 0%, rgba
   transition: .2s all;
 }
 
-.zoom1:hover {
+.zoom1 img:hover {
   z-index: 11;
   cursor: pointer;
   transform: scale(1.5);
 }
 
-.zoom2 {
+.zoom2 img {
   transform: scale(1.4);
   position: relative;
   z-index: 9;
@@ -239,13 +247,13 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(128, 0, 255, 0.16) 0%, rgba
   transition: .2s all;
 }
 
-.zoom2:hover {
+.zoom2 img:hover {
   z-index: 11;
   cursor: pointer;
   transform: scale(1.5);
 }
 
-.zoom3 {
+.zoom3 img {
   transform: scale(2);
   position: relative;
   z-index: 10;
@@ -255,7 +263,7 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(128, 0, 255, 0.16) 0%, rgba
   
 }
 
-.zoom3:hover {
+.zoom3 img:hover {
   z-index: 11;
   cursor: pointer;
   transform: scale(2.1);
