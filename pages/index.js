@@ -106,7 +106,7 @@ export default function Home() {
 
           <div className={styles.latest_video}>
             <div className={styles.video_yt}>
-                <a href="https://www.youtube.com/watch?v=9yotgPB98j8" target="_blank">
+                <a href="https://www.youtube.com/watch?v=9yotgPB98j8" target="_blank" rel="noreferrer">
                   <Image src="/img/thumb-23.jpg" alt="Thumb YouTube Video" width="1280" height="720"></Image>
                 </a>
             </div>
