@@ -26,7 +26,10 @@
 }
 
 
-
+.container {
+  overflow: hidden;
+  position: relative;
+}
 
 .header {
   padding: 30px 0;
@@ -182,6 +185,37 @@
   margin: 15px 0;
 }
 
+.title_footer {
+  font-size: 80px;
+  font-family: gilroybold;
+  color: #fff;
+  text-align: center;
+  line-height:78px;
+  margin: 35px 0;
+}
+
+.title_home::after {
+  content: ' |';
+  animation-name: bar-an;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bar-an {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.title_homeh2 {
+  font-size: 60px;
+  font-family: gilroybold;
+  color: #fff;
+  text-align: center;
+  line-height:78px;
+  margin: 15px 0;
+}
+
 .circle_right {
   position: absolute;
 width: 942px;
@@ -191,6 +225,25 @@ top: -349px;
 z-index: 1;
 background: radial-gradient(50% 50% at 50% 50%, rgba(0, 163, 255, 0.17) 0%, rgba(0, 163, 255, 0) 100%);
 }
+
+.circle_right_footer {
+  position: absolute;
+    width: 1526px;
+    height: 1526px;
+    right: -600px;
+    bottom: -600px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(128, 0, 255, 0.16) 0%, rgba(0, 163, 255, 0) 100%);
+}
+
+.circle_left_footer {
+  position: absolute;
+    width: 1526px;
+    height: 1526px;
+    left: -600px;
+    bottom: -600px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 163, 255, 0.17) 0%, rgba(0, 163, 255, 0) 100%);
+}
+
 
 .recent div > div {
   overflow: visible !important;
@@ -270,6 +323,117 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(128, 0, 255, 0.16) 0%, rgba
 }
 
 
+.community {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box_comm_a {
+  display: flex;
+  background: #2D2D2D;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 40px;
+  font-family: gilroybold;
+  align-items: center;
+  border: solid 2px #2d2d2d;
+  transition: .2s all;
+}
+
+.box_comm_yt a:hover {
+  border-color: red !important;
+}
+
+.box_comm_dc a:hover {
+  border-color: #5865F2 !important;
+}
+
+.box_comm_sp a:hover {
+  border-color: #4EE818 !important;
+}
+
+
+
+.box_comm_a img {
+  padding-right: 15px !important;
+  width: 100%;
+  height: 40px;
+}
+
+.latest_video {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.video_yt {
+  width: 50%;
+}
+
+.video_yt img {
+  width: 100%;
+  border-radius: 20px;
+  transition: .2s all;
+}
+
+.video_yt a > div {
+  overflow: visible !important;
+}
+
+.video_yt img:hover {
+  transform: scale(1.1);
+}
+
+.desc_yt {
+  padding: 0 90px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title_yt {
+  color: #fff;
+  font-size: 40px;
+  font-family: gilroybold;
+  margin-bottom: 30px;
+}
+
+.desc_yt_det {
+  color: #989898;
+  font-size:20px;
+}
+
+.avatar_full {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pre_footer {
+  padding-bottom: 150px;
+}
+
+.footer .contenedor {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.credits {
+  color: #88898A;
+}
+
+.credits a:first-child {
+  margin-left: 45px;
+}
+
+.credits a {
+  margin: 0 25px;
+  color: #ccc;
+}
 
 
 @media (max-width: 600px) {

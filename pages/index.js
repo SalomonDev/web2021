@@ -12,13 +12,8 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
 
-
-  
-
-
   return (
 
-    
     <div className={styles.container}>
       <Head>
         <title>Salomon Sanchez - Diseño UX/UI en Figma</title>
@@ -27,6 +22,9 @@ export default function Home() {
       </Head>
       <div className={styles.circle_left}></div>
       <div className={styles.circle_right}></div>
+
+      <div className={styles.circle_left_footer}></div>
+      <div className={styles.circle_right_footer}></div>
 
       <header className={styles.header}>
         <div className={styles.contenedor}>
@@ -91,11 +89,75 @@ export default function Home() {
             <Image src="/img/project-2.png" width={1280} height={720}/>
           </div>
         </div>
+
+        <div className={styles.contenedor}>
+          <h2 className={styles.title_homeh2}>Comunidad</h2>
+          <div className={styles.community}>
+            <div className={styles.box_comm_yt}>
+              <a href="#" className={styles.box_comm_a}><Image src="/img/youtube-icon.svg" width={50} height={50} alt="Canal YouTube Salomon"/> YouTube</a>
+            </div>
+            <div className={styles.box_comm_dc}>
+              <a href="#" className={styles.box_comm_a}><Image src="/img/discord-icon.svg" width={50} height={50} alt="Canal Discord Salomon"/> Discord</a>
+            </div>
+            <div className={styles.box_comm_sp}>
+              <a href="#" className={styles.box_comm_a}><Image src="/img/spotify-icon.svg" width={50} height={50} alt="Canal Podcast Salomon"/> Spotify</a>
+            </div>
+          </div>
+
+          <div className={styles.latest_video}>
+            <div className={styles.video_yt}>
+                <a href="https://www.youtube.com/watch?v=9yotgPB98j8" target="_blank">
+                  <Image src="/img/thumb-23.jpg" alt="Thumb YouTube Video" width="1280" height="720"></Image>
+                </a>
+            </div>
+            <div className={styles.desc_yt}>
+              <div className={styles.title_yt}>
+                Diseño UI E-commerce App para un Cliente Real
+              </div>
+              <div className={styles.desc_yt_det}>
+                Este es un caso real sobre la marca Harker Natural Garden que ha confiado en nosotros para su rediseño.
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.pre_footer}>
+              <div className={styles.avatar_full}>
+              <Image src="/img/avatar.png" width="153" height="128" alt="avatar salomon"></Image>
+            </div>
+
+            <h1 className={styles.title_footer}>No diseñes solo!</h1>
+
+            <div className={styles.boton_full}>
+            <a href="#" className={styles.boton_purple}>
+                CONTÁCTAME
+                <FontAwesomeIcon icon={faChevronRight} />
+            </a> 
+          </div>
+        </div>
+
+        </div>
+        
        
       </main>
 
       <footer className={styles.footer}>
-       
+        <div className={styles.contenedor}>
+          <div className={styles.credits}>
+            Salomon Sanchez. © 2021       
+            <a href="#">Términos</a>
+            <a href="#">Privacidad</a>    
+          </div>
+          <div className={styles.social_links_footer}>
+                <div className={styles.redes}>
+                  <a className={styles.redes_a} href="#">
+                  <Image src="/img/twitter-icon.svg"  width={36} height={29}  />
+                  </a>
+                  <a className={styles.redes_a} href="#">
+                  <Image src="/img/dribbble-icon.svg"  width={35} height={35}  />
+                  </a>
+                </div>
+          </div>
+        </div>
       </footer>
     </div>
   )
