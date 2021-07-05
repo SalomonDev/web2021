@@ -29,7 +29,9 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.contenedor}>
           <div className={styles.navBar}>
+            <input className={styles.menu_btn} type="checkbox" id="menu-btn" />
             <div className={styles.menu_movil}>
+             
               <Image src="/img/menu-movil.svg" width={30} height={30}   />
             </div>
             <div className={styles.logo}><Image src="/img/logo-salo.svg" width={30} height={46}   /><span>Salomon Sanchez</span></div>

@@ -35,7 +35,7 @@
   padding: 30px 0;
   width:100%;
   position: relative;
-  z-index: 90;
+  z-index: 190;
 }
 
 .main {
@@ -444,6 +444,24 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(128, 0, 255, 0.16) 0%, rgba
   z-index: 90;
 }
 
+.menu_btn {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  z-index: 99;
+}
+
+.menu_btn:checked ~ .menu {
+max-height: 240px;
+display:block;
+}
+
+
 
 @media (max-width: 600px) {
   .grid {
@@ -544,6 +562,33 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(128, 0, 255, 0.16) 0%, rgba
 
   .redes_a:first-child {
     margin-left: 0px;
+  }
+
+  .navBar {
+    position: relative;
+  }
+
+  .menu {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    z-index: 199;
+    padding: 20px !important;
+    border-radius: 20px;
+    background: #2D2D2D;
+  }
+
+  .menu_ul {
+    flex-direction: column  !important;
+    padding: 20px !important;
+  }
+
+  .menu_ul li {
+    margin-bottom: 15px;
+  }
+
+  .menu_ul li:last-child {
+    margin-bottom: 0px;
   }
   
 }
