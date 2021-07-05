@@ -29,6 +29,9 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.contenedor}>
           <div className={styles.navBar}>
+            <div className={styles.menu_movil}>
+              <Image src="/img/menu-movil.svg" width={30} height={30}   />
+            </div>
             <div className={styles.logo}><Image src="/img/logo-salo.svg" width={30} height={46}   /><span>Salomon Sanchez</span></div>
             <div className={styles.menu}>
               <ul className={styles.menu_ul}>
@@ -48,10 +51,10 @@ export default function Home() {
             </div>
             <div className={styles.social_links}>
               <div className={styles.redes}>
-                <a className={styles.redes_a} href="#">
+                <a className={styles.redes_a} href="https://twitter.com/_salomonsanchez" target="_blank" rel="noreferrer">
                 <Image src="/img/twitter-icon.svg"  width={36} height={29}  />
                 </a>
-                <a className={styles.redes_a} href="#">
+                <a className={styles.redes_a} href="https://dribbble.com/salomonsanchez" target="_blank" rel="noreferrer">
                 <Image src="/img/dribbble-icon.svg"  width={35} height={35}  />
                 </a>
               </div>
@@ -94,10 +97,10 @@ export default function Home() {
           <h2 className={styles.title_homeh2}>Comunidad</h2>
           <div className={styles.community}>
             <div className={styles.box_comm_yt}>
-              <a href="#" className={styles.box_comm_a}><Image src="/img/youtube-icon.svg" width={50} height={50} alt="Canal YouTube Salomon"/> YouTube</a>
+              <a href="https://youtube.com/salomonsanchez?sub_confirmation=1" className={styles.box_comm_a} target="_blank" rel="noreferrer"><Image src="/img/youtube-icon.svg" width={50} height={50} alt="Canal YouTube Salomon"/> YouTube</a>
             </div>
             <div className={styles.box_comm_dc}>
-              <a href="#" className={styles.box_comm_a}><Image src="/img/discord-icon.svg" width={50} height={50} alt="Canal Discord Salomon"/> Discord</a>
+              <a href="https://discord.gg/ry2J5g4yf6" className={styles.box_comm_a} target="_blank" rel="noreferrer"><Image src="/img/discord-icon.svg" width={50} height={50} alt="Canal Discord Salomon"/> Discord</a>
             </div>
             <div className={styles.box_comm_sp}>
               <a href="#" className={styles.box_comm_a}><Image src="/img/spotify-icon.svg" width={50} height={50} alt="Canal Podcast Salomon"/> Spotify</a>
@@ -143,16 +146,16 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={styles.contenedor}>
           <div className={styles.credits}>
-            Salomon Sanchez. © 2021       
+            <span>Salomon Sanchez. © 2021</span>       
             <a href="#">Términos</a>
             <a href="#">Privacidad</a>    
           </div>
           <div className={styles.social_links_footer}>
                 <div className={styles.redes}>
-                  <a className={styles.redes_a} href="#">
+                  <a className={styles.redes_a} href="https://twitter.com/_salomonsanchez" target="_blank" rel="noreferrer">
                   <Image src="/img/twitter-icon.svg"  width={36} height={29}  />
                   </a>
-                  <a className={styles.redes_a} href="#">
+                  <a className={styles.redes_a} href="https://dribbble.com/salomonsanchez" target="_blank" rel="noreferrer">
                   <Image src="/img/dribbble-icon.svg"  width={35} height={35}  />
                   </a>
                 </div>
