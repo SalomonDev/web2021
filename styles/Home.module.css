@@ -454,6 +454,8 @@ background: radial-gradient(50% 50% at 50% 50%, rgba(128, 0, 255, 0.16) 0%, rgba
   -moz-appearance: none;
   appearance: none;
   z-index: 99;
+  border: none;
+  outline: none;
 }
 
 .menu_btn:checked ~ .menu {
