@@ -8,9 +8,9 @@ body {
 }
 
 .container {
-  min-height: calc(100% + env(safe-area-inset-top) * 2);
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-  padding-top: calc(env(safe-area-inset-top) * 2) !important;
+  min-height: calc(100% + env(safe-area-inset-top));
+  padding: calc(env(30px + safe-area-inset-top)) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+
 }
 
 a {
