@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 
-export default function Home() {
+export default function Portfolio() {
 
   return (
 
@@ -44,7 +44,7 @@ export default function Home() {
                   <a className={styles.a_links} href="#">Cursos</a>
                 </li>
                 <li className={styles.nav_links}>
-                  <a className={styles.a_links} href="/portfolio/.">Portafolio</a>
+                  <a className={styles.a_active} href="/portfolio/.">Portafolio</a>
                 </li>
                 <li className={styles.nav_links}>
                   <a className={styles.a_links} href="#">Blog</a>
@@ -75,58 +75,74 @@ export default function Home() {
       </header>
 
       <main className={styles.main}>
-        <h1 className={styles.title_home}>Full-Stack Designer<br></br>
-& Content Creator</h1>
+        <h1 className={styles.title_home}>Portafolio</h1>
         <p className={styles.description}>Siempre llevar la usabilidad y la funcionalidad con una buena<br></br> estética es el resultado esperado.</p>
        
-        <div className={styles.boton_full}>
-          <a href="https://www.youtube.com/watch?v=fo_DxyXrLKE&list=PLc_Na94vlIOlqRIcnkOsTfqcrvnDPPrdM" target="_blank" rel="noreferrer" className={styles.boton_purple}>
-              VER CURSO GRATIS
-              <FontAwesomeIcon icon={faChevronRight} />
-          </a> 
-        </div>
+        
 
-        <div className={styles.recent}>
-          <div className={styles.zoom1} >
-            <Image src="/img/project-3.png" width={1280} height={720} />
+        <h2 className={styles.title_projects}>Diseño UX/UI</h2>
+        <div className={styles.projects}>
+            
+          <div className={styles.project} >
+            <Image src="/img/project-1.png" width={1280} height={720} />
           </div>
-          <div className={styles.zoom3} >
-            <Image src="/img/project-1.png" width={1280} height={720}/>
-          </div>
-          <div className={styles.zoom2} >
+          <div className={styles.project} >
             <Image src="/img/project-2.png" width={1280} height={720}/>
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-3.png" width={1280} height={720}/>
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-4.png" width={1280} height={720} />
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-5.png" width={1280} height={720}/>
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-6.png" width={1280} height={720}/>
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-7.png" width={1280} height={720} />
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-8.png" width={1280} height={720}/>
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-9.png" width={1280} height={720}/>
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-16.png" width={1280} height={720} />
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-11.png" width={1280} height={720}/>
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-12.png" width={1280} height={720}/>
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-13.png" width={1280} height={720} />
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-14.png" width={1280} height={720}/>
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-15.png" width={1280} height={720}/>
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-10.png" width={1280} height={720}/>
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-17.png" width={1280} height={720}/>
+          </div>
+          <div className={styles.project} >
+            <Image src="/img/project-18.png" width={1280} height={720}/>
           </div>
         </div>
 
         <div className={styles.contenedor}>
-          <h2 className={styles.title_homeh2}>Comunidad</h2>
-          <div className={styles.community}>
-            <div className={styles.box_comm_yt}>
-              <a href="https://youtube.com/salomonsanchez?sub_confirmation=1" className={styles.box_comm_a} target="_blank" rel="noreferrer"><Image src="/img/youtube-icon.svg" width={50} height={50} alt="Canal YouTube Salomon"/> YouTube</a>
-            </div>
-            <div className={styles.box_comm_dc}>
-              <a href="https://discord.gg/ry2J5g4yf6" className={styles.box_comm_a} target="_blank" rel="noreferrer"><Image src="/img/discord-icon.svg" width={50} height={50} alt="Canal Discord Salomon"/> Discord</a>
-            </div>
-            <div className={styles.box_comm_sp}>
-              <a href="#" className={styles.box_comm_a}><Image src="/img/spotify-icon.svg" width={50} height={50} alt="Canal Podcast Salomon"/> Spotify</a>
-            </div>
-          </div>
+          
 
-          <div className={styles.latest_video}>
-            <div className={styles.video_yt}>
-                <a href="https://www.youtube.com/watch?v=9yotgPB98j8" target="_blank" rel="noreferrer">
-                  <Image src="/img/thumb-23.jpg" alt="Thumb YouTube Video" width="1280" height="720"></Image> 
-                </a>
-            </div>
-            <div className={styles.desc_yt}>
-              <div className={styles.title_yt}>
-                Diseño UI E-commerce App para un Cliente Real
-              </div>
-              <div className={styles.desc_yt_det}>
-                Este es un caso real sobre la marca Harker Natural Garden que ha confiado en nosotros para su rediseño.
-              </div>
-            </div>
-          </div>
+          
 
           <div className={styles.pre_footer}>
               <div className={styles.avatar_full}>
