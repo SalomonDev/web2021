@@ -46,9 +46,7 @@ export default function Portfolio() {
                 <li className={styles.nav_links}>
                   <a className={styles.a_active} href="/portfolio/.">Portafolio</a>
                 </li>
-                <li className={styles.nav_links}>
-                  <a className={styles.a_links} href="#">Blog</a>
-                </li>
+                
                 <li className={styles.nav_links}>
                   <a className={styles.a_links} href="https://www.patreon.com/salomonsanchez" target="_blank" rel="noreferrer">Mentorías</a>
                 </li>
@@ -64,7 +62,7 @@ export default function Portfolio() {
                 </a>
               </div>
               <div className={styles.suscribe}>
-                <a href="#">
+                <a href="https://www.youtube.com/salomonsanchez?sub_confirmation=1">
                   Suscríbete
                   <FontAwesomeIcon icon={faChevronRight} />
                 </a> 
@@ -152,7 +150,7 @@ export default function Portfolio() {
             <h1 className={styles.title_footer}>No diseñes solo!</h1>
 
             <div className={styles.boton_full}>
-            <a href="#" className={styles.boton_purple}>
+            <a href="https://www.instagram.com/_salomonsanchez/" className={styles.boton_purple}>
                 CONTÁCTAME
                 <FontAwesomeIcon icon={faChevronRight} />
             </a> 
